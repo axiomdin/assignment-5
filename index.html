@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+        <a class="navbar-brand" href="#">Hungry Monster</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <!-- Data Display Part -->
+        <div class="container">
+            <div id="search-area" style="text-align: center; margin-top: 40px;">
+                <input id="search-meal" value="" type="search" placeholder="Please, enter your desired meal name">
+                <button id="btn-search">Search</button>
+            </div>
+            <div id="meal-details"> </div>
+            <div id="meals-list"> </div>
+            <div id="show-error" style="display: none; text-align: center; color: red; font-size: 40px;">
+                <h4>Sorry, No meal found. Please input a valid food name.</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
